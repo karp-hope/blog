@@ -1,0 +1,1407 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.0">
+    
+    
+      
+        <title>代码整洁之道 - hope's blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="hope's blog" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              hope's blog
+            </span>
+            <span class="md-header-nav__topic">
+              代码整洁之道
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="hope's blog" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    hope's blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="首页" class="md-nav__link">
+      首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      常见配置
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        常见配置
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cfg/bwgconfig/" title="搬瓦工配置" class="md-nav__link">
+      搬瓦工配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      书籍
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        书籍
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        代码整洁之道
+      </label>
+    
+    <a href="./" title="代码整洁之道" class="md-nav__link md-nav__link--active">
+      代码整洁之道
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="整洁的代码只做好一件事" class="md-nav__link">
+    整洁的代码只做好一件事
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="有意义的命名" class="md-nav__link">
+    有意义的命名
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="函数" class="md-nav__link">
+    函数
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="短小" class="md-nav__link">
+    短小
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="代码块和缩进" class="md-nav__link">
+    代码块和缩进
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="只做一件事" class="md-nav__link">
+    只做一件事
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="每个函数一个抽象层级" class="md-nav__link">
+    每个函数一个抽象层级
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch" title="switch语句" class="md-nav__link">
+    switch语句
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="函数参数" class="md-nav__link">
+    函数参数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="分隔指令与询问" class="md-nav__link">
+    分隔指令与询问
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="使用异常替代返回错误码" class="md-nav__link">
+    使用异常替代返回错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" title="注释" class="md-nav__link">
+    注释
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="注释不能用来美化糟糕的代码" class="md-nav__link">
+    注释不能用来美化糟糕的代码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#todo" title="TODO注释" class="md-nav__link">
+    TODO注释
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="注释掉的代码" class="md-nav__link">
+    注释掉的代码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" title="格式" class="md-nav__link">
+    格式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" title="对象和数据格式" class="md-nav__link">
+    对象和数据格式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="数据抽象" class="md-nav__link">
+    数据抽象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="数据，对象的反对称性" class="md-nav__link">
+    数据，对象的反对称性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="得墨忒耳律（试用与对象而非数据结构）" class="md-nav__link">
+    得墨忒耳律（试用与对象而非数据结构）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" title="错误处理" class="md-nav__link">
+    错误处理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" title="使用异常而非返回码" class="md-nav__link">
+    使用异常而非返回码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" title="使用不可控异常" class="md-nav__link">
+    使用不可控异常
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null" title="别返回null值" class="md-nav__link">
+    别返回null值
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null_1" title="别传递null值" class="md-nav__link">
+    别传递null值
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" title="边界" class="md-nav__link">
+    边界
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" title="封装第三方api的调用" class="md-nav__link">
+    封装第三方api的调用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" title="学习性测试的好处不只是免费" class="md-nav__link">
+    学习性测试的好处不只是免费
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" title="单元测试" class="md-nav__link">
+    单元测试
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" title="保持测试整洁" class="md-nav__link">
+    保持测试整洁
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" title="整洁的测试" class="md-nav__link">
+    整洁的测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first" title="F.I.R.S.T 准则" class="md-nav__link">
+    F.I.R.S.T 准则
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_27" title="类" class="md-nav__link">
+    类
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_28" title="类的组织" class="md-nav__link">
+    类的组织
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" title="类应该短小" class="md-nav__link">
+    类应该短小
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" title="11.系统" class="md-nav__link">
+    11.系统
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" title="将系统的构造和使用分离开（这里感觉好像是跟依赖倒置原则差不多的意思，把具体类的依赖分开？）" class="md-nav__link">
+    将系统的构造和使用分离开（这里感觉好像是跟依赖倒置原则差不多的意思，把具体类的依赖分开？）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java" title="java代理" class="md-nav__link">
+    java代理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" title="12.迭进" class="md-nav__link">
+    12.迭进
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" title="简单设计规则1：运行所有测试" class="md-nav__link">
+    简单设计规则1：运行所有测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-4" title="简单设计规则2-4：重构" class="md-nav__link">
+    简单设计规则2-4：重构
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" title="13.并发编程" class="md-nav__link">
+    13.并发编程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" title="14.逐步改进" class="md-nav__link">
+    14.逐步改进
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15junit" title="15.junit内幕" class="md-nav__link">
+    15.junit内幕
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" title="17.味道与启发" class="md-nav__link">
+    17.味道与启发
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_31" title="注释" class="md-nav__link">
+    注释
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" title="函数" class="md-nav__link">
+    函数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" title="重复" class="md-nav__link">
+    重复
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifelse-switchcase" title="用多态代替if/else 或switch/case" class="md-nav__link">
+    用多态代替if/else 或switch/case
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" title="不用掩盖时序耦合" class="md-nav__link">
+    不用掩盖时序耦合
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" title="函数应该只在一个抽象层级上" class="md-nav__link">
+    函数应该只在一个抽象层级上
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" title="避免传递浏览" class="md-nav__link">
+    避免传递浏览
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" title="不要继承常量" class="md-nav__link">
+    不要继承常量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" title="测试" class="md-nav__link">
+    测试
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="整洁的代码只做好一件事" class="md-nav__link">
+    整洁的代码只做好一件事
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="有意义的命名" class="md-nav__link">
+    有意义的命名
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="函数" class="md-nav__link">
+    函数
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="短小" class="md-nav__link">
+    短小
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="代码块和缩进" class="md-nav__link">
+    代码块和缩进
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="只做一件事" class="md-nav__link">
+    只做一件事
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="每个函数一个抽象层级" class="md-nav__link">
+    每个函数一个抽象层级
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch" title="switch语句" class="md-nav__link">
+    switch语句
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="函数参数" class="md-nav__link">
+    函数参数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="分隔指令与询问" class="md-nav__link">
+    分隔指令与询问
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="使用异常替代返回错误码" class="md-nav__link">
+    使用异常替代返回错误码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" title="注释" class="md-nav__link">
+    注释
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="注释不能用来美化糟糕的代码" class="md-nav__link">
+    注释不能用来美化糟糕的代码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#todo" title="TODO注释" class="md-nav__link">
+    TODO注释
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="注释掉的代码" class="md-nav__link">
+    注释掉的代码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" title="格式" class="md-nav__link">
+    格式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" title="对象和数据格式" class="md-nav__link">
+    对象和数据格式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="数据抽象" class="md-nav__link">
+    数据抽象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="数据，对象的反对称性" class="md-nav__link">
+    数据，对象的反对称性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="得墨忒耳律（试用与对象而非数据结构）" class="md-nav__link">
+    得墨忒耳律（试用与对象而非数据结构）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" title="错误处理" class="md-nav__link">
+    错误处理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" title="使用异常而非返回码" class="md-nav__link">
+    使用异常而非返回码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" title="使用不可控异常" class="md-nav__link">
+    使用不可控异常
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null" title="别返回null值" class="md-nav__link">
+    别返回null值
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#null_1" title="别传递null值" class="md-nav__link">
+    别传递null值
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" title="边界" class="md-nav__link">
+    边界
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" title="封装第三方api的调用" class="md-nav__link">
+    封装第三方api的调用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" title="学习性测试的好处不只是免费" class="md-nav__link">
+    学习性测试的好处不只是免费
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" title="单元测试" class="md-nav__link">
+    单元测试
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" title="保持测试整洁" class="md-nav__link">
+    保持测试整洁
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" title="整洁的测试" class="md-nav__link">
+    整洁的测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first" title="F.I.R.S.T 准则" class="md-nav__link">
+    F.I.R.S.T 准则
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_27" title="类" class="md-nav__link">
+    类
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_28" title="类的组织" class="md-nav__link">
+    类的组织
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" title="类应该短小" class="md-nav__link">
+    类应该短小
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" title="11.系统" class="md-nav__link">
+    11.系统
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" title="将系统的构造和使用分离开（这里感觉好像是跟依赖倒置原则差不多的意思，把具体类的依赖分开？）" class="md-nav__link">
+    将系统的构造和使用分离开（这里感觉好像是跟依赖倒置原则差不多的意思，把具体类的依赖分开？）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java" title="java代理" class="md-nav__link">
+    java代理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" title="12.迭进" class="md-nav__link">
+    12.迭进
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" title="简单设计规则1：运行所有测试" class="md-nav__link">
+    简单设计规则1：运行所有测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-4" title="简单设计规则2-4：重构" class="md-nav__link">
+    简单设计规则2-4：重构
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" title="13.并发编程" class="md-nav__link">
+    13.并发编程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" title="14.逐步改进" class="md-nav__link">
+    14.逐步改进
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15junit" title="15.junit内幕" class="md-nav__link">
+    15.junit内幕
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" title="17.味道与启发" class="md-nav__link">
+    17.味道与启发
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_31" title="注释" class="md-nav__link">
+    注释
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" title="函数" class="md-nav__link">
+    函数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" title="重复" class="md-nav__link">
+    重复
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifelse-switchcase" title="用多态代替if/else 或switch/case" class="md-nav__link">
+    用多态代替if/else 或switch/case
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" title="不用掩盖时序耦合" class="md-nav__link">
+    不用掩盖时序耦合
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" title="函数应该只在一个抽象层级上" class="md-nav__link">
+    函数应该只在一个抽象层级上
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" title="避免传递浏览" class="md-nav__link">
+    避免传递浏览
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" title="不要继承常量" class="md-nav__link">
+    不要继承常量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" title="测试" class="md-nav__link">
+    测试
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>代码整洁之道</h1>
+                
+                <h2 id="_1">整洁的代码只做好一件事</h2>
+<p>每个函数，每个类，每个模块都全神贯注于一事情， 整洁的代码应该可由作者之外的开发者阅读和增补，应该包含有单元测试和验收测试。只提供一种而非多种做一件事的途径，只有尽量少的依赖关系，明确的定义和尽量少的API。</p>
+<p>如果每次签入的时候，代码都比签出时干净，那么代码就不会腐坏</p>
+<h2 id="_2">有意义的命名</h2>
+<h2 id="_3">函数</h2>
+<h4 id="_4">短小</h4>
+<p>函数的第一规则是要短小，第二条规则是还要更短小</p>
+<h4 id="_5">代码块和缩进</h4>
+<p>if, else, while语句等，其中的代码块应该只有一行。该行大抵应该是一个函数调用语句。函数不应该大到足以容纳嵌套结构，函数的缩进层级不该多于一层或者两层</p>
+<h4 id="_6">只做一件事</h4>
+<p>函数应该做一件事，做好一件事，只做一件事</p>
+<h4 id="_7">每个函数一个抽象层级</h4>
+<h4 id="switch">switch语句</h4>
+<p>单一权责原则（Single Responsibility Principle, SRP）
+开放闭合原则（Open Closed Principle, OCP）
+switch问题的解决方案 是将switch语句埋到抽象工厂（注意抽象工厂和工厂方法的区别）底下，不让任何人看到。</p>
+<p>一般对于switch语句，如果只出现一次，用于创建多态对象，而且隐藏在某个继承关系中，在系统其他的部分看不到，就可以。（当然需要就事论事，不过一般情况下是这样）</p>
+<h4 id="_8">函数参数</h4>
+<p>最理想的参数数量是0，其次是1，再次是2，应尽量避免3；有非常足够特殊的理由才能使用3个以上参数。
+从代码层面看，参数不容易对付，他们带有太多概念性；从单元测试角度看，参数甚至更叫人为难，因为组合太多了。对于转换，使用输出函数而非返回值简直令人迷惑。</p>
+<p>标识参数：标识参数丑陋不堪；向函数传入布尔值简直就是骇人听闻的做法，这样做，相当于大声宣布函数做的不止一件事</p>
+<p>如果函数看来需要2个，3个，或3个以上参数时，就说明一些参数应该分装成类了。</p>
+<h4 id="_9">分隔指令与询问</h4>
+<p>函数要么做什么事情，要么回答什么事，但二者不可兼得。</p>
+<h4 id="_10">使用异常替代返回错误码</h4>
+<p>try catch代码块丑陋不堪，他们搞乱了代码结构，把错误处理与正常流程混为一谈，最好把try catch的主体部分抽离出来，另外形成函数</p>
+<pre><code>public void delete(Page page){
+    try{
+        deletePage(page);
+    }catch(Exception e){
+        logError(e);
+    }
+}
+</code></pre>
+
+<h2 id="_11">注释</h2>
+<p>什么也比不上良好的注释来的有用，什么也不会比乱七八糟的注释更有本事搞坏一个模块。什么也不会比陈旧，提供错误信息的注释更有破坏性。</p>
+<h4 id="_12">注释不能用来美化糟糕的代码</h4>
+<p>最好用代码来解释其行为，而非用注释</p>
+<h4 id="todo">TODO注释</h4>
+<p>TODO是一种程序员认为应该做，但由于某些原因目前还没有做的工作。</p>
+<h4 id="_13">注释掉的代码</h4>
+<p>直接把代码注释掉是讨厌的做法，其他人不敢删除代码。源代码控制系统会记住他们，丢不了</p>
+<h2 id="_14">格式</h2>
+<h2 id="_15">对象和数据格式</h2>
+<p>将变量设置为私有有一个理由：我们不想其他人依赖这些变量，那么不应该给对象自动添加赋值器和取值器，将私有化变量公之于众，如同它们根本就是公共变量一般。</p>
+<h4 id="_16">数据抽象</h4>
+<p>隐藏实现并非只是在变量之间放上一个函数层那么简单。隐藏实现关乎抽象， 一般我们不远暴露细节，更愿意以抽象形态表述数据。傻乐着乱加取/赋值器是最坏的选择。</p>
+<h4 id="_17">数据，对象的反对称性</h4>
+<p>对象把数据隐藏于抽象之后，暴露操作数据的函数；数据结构暴露其数据，没有提供有意义的函数</p>
+<p>对象与数据结构之间的二分原理：过程式代码（使用数据结构的代码）便于在不改动既有数据结构的前提下添加新函数；面向对象代码便于在不改动既有函数的前提下添加新类。</p>
+<p>在任何复杂的系统中，都会有需要添加新数据类型而不是新函数的时候，此时对象可能更合适；反之，需要添加新函数而不是新数据类型时，过程式代码和数据结构更合适，个人考虑吧</p>
+<h4 id="_18">得墨忒耳律（试用与对象而非数据结构）</h4>
+<p>模块不应该了解它所操作对象的内部情况</p>
+<p>火车失事：A.b().c().d()///连串的调用，这种调用明显也违反了得墨忒耳律
+如果b(),c(),d()返回的是数据结构的话，得墨忒耳律不适用，也就可以这样调用，因为数据结构暴露其数据。如果是对象的话，这样的调用可以优化，不要搞得这么多</p>
+<p>混杂：某个类一半是对象，一半是数据结构，此种混杂2面不讨好，需要优化</p>
+<h2 id="_19">错误处理</h2>
+<p>错误处理很重要，但如果搞乱了代码逻辑，就是错误的做法</p>
+<h4 id="_20">使用异常而非返回码</h4>
+<h4 id="_21">使用不可控异常</h4>
+<p>可控异常：每个方法都列出它可能传递给调用者的异常。
+可控异常的代码是违反了 开放/闭合原则，如果你在方法中抛出可控异常，而catch语句在三个层级之上，那就得在catch语句和抛出异常处之间的每个方法签名上都声明该异常了。</p>
+<p>如果你在编写一套关键代码库，则可控异常有时也会有用：你必须捕获异常，但对于一般开发，其依赖成本要高于收益</p>
+<h4 id="null">别返回null值</h4>
+<p>要谈论错误处理，就一定要提及那些容易引发错误的做法。第一项就是null值，很多时候，一个函数中很多代码都在检查null值。 这种代码看似不坏，其实糟糕透了，返回null值，在给自己增加工作量的同时也给调用者添乱，只要有一处没有检查null值，程序就会失控</p>
+<p>如果你打算在方法中返回null值，不如抛出异常，或者返回特例对象（一个代替null值的class，这种我觉得是比较好的）。</p>
+<h4 id="null_1">别传递null值</h4>
+<p>在方法中返回null值是糟糕的做法，但是将null值传递给其他的方法就更糟糕了，除非api要求你传null，否则就要尽量避免</p>
+<h2 id="_22">边界</h2>
+<h4 id="api">封装第三方api的调用</h4>
+<h4 id="_23">学习性测试的好处不只是免费</h4>
+<p>学习性测试毫无成本。无论如何我们都得学习要使用的API，而编写测试则是获得这些知识的容易而不会影响其他工作的途径。</p>
+<p>使用Adapter模式可以很好的封装第三方我们的不太了解的接口来转换成我们需要的熟悉的接口</p>
+<h2 id="_24">单元测试</h2>
+<p>TDD三定律：
+1.在编写不能通过的单元测试前，不可编写生产代码。
+2.只可编写刚好无法通过的单元测试，不能编译也算不通过
+3.只可编写刚好足以通过当前失败测试的生产代码</p>
+<h4 id="_25">保持测试整洁</h4>
+<p>测试越脏，就越难修改
+没有测试代码组做保障，会开始害怕做改动，并且不再清理生产代码，因为害怕修改；测试使改动变得可能
+测试代码和生产代码一样重要，需要被思考，被设计和被照料，应该像生产代码一般保持整洁</p>
+<h4 id="_26">整洁的测试</h4>
+<p>可读性，可读性，可读性</p>
+<p>构造-操作-检验模式：第一个环节构造测试数据，第二个环节操作测试数据，第三个环节检验操作是否得到预期的结果</p>
+<p>每个测试只测试一个概念</p>
+<h4 id="first">F.I.R.S.T 准则</h4>
+<p>快速（fast）：测试应该足够快
+独立（Independent）：测试应该相互独立
+可重复（Repeatable）：测试应该可在任何环境中重复通过
+自足验证（Self-Validating）：测试应该有 布尔值 输出。无论是否失败，不应该通过查看日志文件来确定是否通过测试。
+及时（Timely）：测试应该及时编写。测试应该在恰好使其通过的生产代码之前编写。如果在生产代码之后编写，你会发现生产代码难以测试，这样你可能不会去设计容易测试的生产代码了。这样恶性循环。</p>
+<h2 id="_27">类</h2>
+<h4 id="_28">类的组织</h4>
+<p>我们喜欢保持变量或工具函数的私有性，但并不执着于此；对于我们来说测试说了算； 但是总的来说，我们首先会想办法使之保有隐私。放松封装总是下策。</p>
+<h4 id="_29">类应该短小</h4>
+<p>衡量类的大小，我们应该通过权责来衡量
+类的名称应当描述其权责，实际上，命名正是帮助判断类的长度的第一个手段。</p>
+<p>单一权责原则（SPR）：类或模块应有且只有一条加以修改的理由
+系统应该许多短小的类而不是由少量巨大的类组成，每个小类封装一个权责，只有一个修改理由，并与少数其他的类一起协同达成期望的系统行为。</p>
+<p>高内聚，低耦合</p>
+<p>将大函数拆成许多小函数，往往也是将类拆分成多个小类的时机，这样可以提高内聚性，当类丧失了内聚性，就拆分它</p>
+<p>依赖倒置原则（DIP -- Dependency Inversion Principle）类应该依赖于抽象，而非依赖于具体细节，这样便于解耦。</p>
+<h2 id="11">11.系统</h2>
+<h4 id="_30">将系统的构造和使用分离开（这里感觉好像是跟依赖倒置原则差不多的意思，把具体类的依赖分开？）</h4>
+<p>这里的系统相当于一个class
+抽象工厂
+依赖注入：感觉这个概念好像就是把某个依赖从外部传进来（通过构造函数的形式或者赋值器方法来处理某个类中的依赖，搞得好像很高端的样子。。）</p>
+<p>AOP(面向切面编程 或者叫 面向方面编程)</p>
+<h4 id="java">java代理</h4>
+<p>java静态代理：若代理类在代码中已经编写了，就相当于静态代理
+java动态代理：若代码中没有代理类，通过java的InvocationHandler接口实现的代理，就叫动态代理</p>
+<h2 id="12">12.迭进</h2>
+<h4 id="1">简单设计规则1：运行所有测试</h4>
+<p>紧耦合的代码难以编写测试；同样，编写测试越多，就越遵循DIP，SRP之类的规则，使用依赖注入，接口和抽象等工具尽可能减少耦合。如此一来，设计就有长足进步了</p>
+<h4 id="2-4">简单设计规则2-4：重构</h4>
+<p>测试消除了对清理代码就会破坏代码的恐惧</p>
+<p>不可重复</p>
+<p>在写完代码的时候，如果不满意的话，可以花一些时间调整一下代码</p>
+<h2 id="13">13.并发编程</h2>
+<h2 id="14">14.逐步改进</h2>
+<h2 id="15junit">15.junit内幕</h2>
+<h2 id="17">17.味道与启发</h2>
+<h4 id="_31">注释</h4>
+<h4 id="_32">函数</h4>
+<p>永不被调用的函数应该丢弃，保留死代码纯属浪费</p>
+<h4 id="_33">重复</h4>
+<p>每次看到重复，都代表着遗漏了抽象</p>
+<h4 id="ifelse-switchcase">用多态代替if/else 或switch/case</h4>
+<p>单个switch原则：对于给定的选择类型，不应有多于一个switch语句，在那个switch语句中的多个case中，必须创建多态对象，取代系统中其他类似的switch语句</p>
+<h4 id="_34">不用掩盖时序耦合</h4>
+<p>如下面这种</p>
+<pre><code>public void dive(){
+    beginA();
+    beginB();
+    beginC();
+}
+</code></pre>
+
+<p>三个函数顺序很重要，必须先执行A，然后B，然后C， 其实可以考虑这样：</p>
+<pre><code>public void dive(){
+    Object A = beginA();
+    OBject B = beginB(A);
+    beginC(B);
+}
+</code></pre>
+
+<p>这样就强制了调用的顺序了~</p>
+<h4 id="_35">函数应该只在一个抽象层级上</h4>
+<h4 id="_36">避免传递浏览</h4>
+<p>就是所谓的 得墨忒耳律，形如a.getB().getC()这样的形式。 正确的做法是让直接协作者（这里是B）提供所需的全部服务。</p>
+<h4 id="_37">不要继承常量</h4>
+<h4 id="_38">测试</h4>
+<p>只要还没有被测试探测过的条件，或者是还有没被验证过的计算，测试就还不够。</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../cfg/bwgconfig/" title="搬瓦工配置" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                搬瓦工配置
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.2ba8dec4.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

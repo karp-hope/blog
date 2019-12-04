@@ -1,0 +1,490 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.0">
+    
+    
+      
+        <title>搬瓦工配置 - hope's blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="hope's blog" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              hope's blog
+            </span>
+            <span class="md-header-nav__topic">
+              搬瓦工配置
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="hope's blog" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    hope's blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="首页" class="md-nav__link">
+      首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      常见配置
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        常见配置
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        搬瓦工配置
+      </label>
+    
+    <a href="./" title="搬瓦工配置" class="md-nav__link md-nav__link--active">
+      搬瓦工配置
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vps" title="进入搬瓦工官网购买VPS" class="md-nav__link">
+    进入搬瓦工官网购买VPS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="选择一台合适的服务器" class="md-nav__link">
+    选择一台合适的服务器
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      书籍
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        书籍
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../book/代码整洁之道/" title="代码整洁之道" class="md-nav__link">
+      代码整洁之道
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vps" title="进入搬瓦工官网购买VPS" class="md-nav__link">
+    进入搬瓦工官网购买VPS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="选择一台合适的服务器" class="md-nav__link">
+    选择一台合适的服务器
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h2 id="_1">搬瓦工的详细配置</h2>
+<p>无论工作还是生活中，我们都需要使用互联网。但有时候遇到问题时，度娘实在不给力，而谷歌又无法访问。但没关系，有问题就有解决的方法！所以小编就教教大家如何使用版搬瓦工来搭建SS服务器，带你畅游全网！"</p>
+<h4 id="vps">进入搬瓦工官网购买VPS</h4>
+<p>在搭建SS之前你需要准备一台境外VPS服务器。所以今天我们的主角之一：搬瓦工VPS要登场了！按照个人的需求，点击下面连接进入选配：
+点击这里进入搬瓦工bandwagonhost官网
+搬瓦工10G VPS（KVM架构）$19.99/年
+基本配置-SSD：10G | 内存：512M | CPU：1x Intel Xeon | 流量：500G/月 | 链接速度：1千兆
+搬瓦工20G VPS（KVM架构）$49.99/年
+基本配置-SSD：20G | 内存：1G | CPU：2x Intel Xeon | 流量：1TB/月 | 链接速度：1千兆
+更多搬瓦工VPS选择（KVM架构）$19.99/年起
+可灵活自由选择各种配置以及支付结算方式。</p>
+<h4 id="_2">选择一台合适的服务器</h4>
+<p>因为只是搭建SS，所以配置不用太高，19.99美元/年的KVM完全OK,按照目前的汇率，大约等于128人民币，已经是超值了,当然,土豪请随意！确认下计费方式就是19.99美元/1年没错,然后选择机房位置，当然离中国近点会稍微稳定点，推荐洛杉矶吧，其实相差不大。</p>
+<h2 id="_3">获取服务器后台信息</h2>
+<p>进入你刚才购买的服务器控制面板,确认下服务的具体配置操作系统什么的.</p>
+<p>我们搭建SS需要的最佳系统环境是[Centos 6 x86_64-bbr],所以需要你点击[stop],然后下一步咱们重选系统.
+<img alt="Screenshot" src="../../img/1.png" /></p>
+<p>点击左侧菜单[Install new OS],勾选同意,然后点金按钮[Reload].稍等片刻.
+<img alt="2" src="../../img/2.png" /></p>
+<p>这个页面不要关掉了!因为以下就是你的VPS-root权限密码和端口号。在接下来搭建SS服务器的过程中会用到!
+<img alt="3" src="../../img/3.png" /></p>
+<p>其实搭建SS服务器并没有大家想象的那么难，一共只需三行命令而已，但是考虑到有很多小白用户，我每一步都会去截图说明。
+首先,你要下载一个软件:Putty。下载好之后，打开Putty，输入上面搬瓦工后台的服务器IP以及端口，然后点【Open】。
+<a href="https://pan.baidu.com/s/13p39wsC58im99nxYKOyQzA">点击这里下载Putty</a></p>
+<p><img alt="4" src="../../img/4.png" /></p>
+<p>这里有对话框弹出，选择“是”。</p>
+<p>然后在命令窗输入“root”，敲打回车键。等几秒秒，并按照按提示输入主机root的密码，密码就是前面记录的VPS密码。复制你的密码，粘贴至Putty命令窗（<strong>粘贴方式为单击鼠标右键，只需要右键单击一次，这里不会显示任何内容，其实是已经输入了</strong>），回车。</p>
+<p><font color="#ff0000">
+特别提醒：Putty命令窗的粘贴方式为【鼠标右键单机一次】，所以以下凡是涉及粘贴都要这样操作！×关闭警报
+</font></p>
+<p><img alt="5" src="../../img/5.png" /></p>
+<p>等到出现“[root@host ~]#”，复制下面脚本第1条命令，回车：</p>
+<p>wget –no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh</p>
+<p><img alt="6" src="../../img/6.png" /></p>
+<p><font color="#ff0000">需要注意的是这一步有时会出现“bash: wget: command not found”：的问题，如下图所示：</font>
+<img alt="7" src="../../img/7.png" /></p>
+<p>不过不要紧张，国外的服务器会有时出现这种情况（亲测搬瓦工偶尔会出现，但是Vultr就不会）。
+<font color="#ff0000">解决方法：可以请先执行“yum -y install wget”命令，成功后，再执行上面的命令。（如果没有出现请无视）</font>
+<img alt="8" src="../../img/8.png" /></p>
+<p>看到上图时，咱们接着继续，执行第2条脚本命令，回车：</p>
+<p>chmod +x shadowsocks.sh</p>
+<p><img alt="9" src="../../img/9.png" /></p>
+<p>等出现了上图后，输入第3条脚本命令，回车：</p>
+<p>./shadowsocks.sh 2&gt;&amp;1 | tee shadowsocks.log</p>
+<p><img alt="10" src="../../img/10.png" />
+以上选择”1“，然后回车；</p>
+<p><img alt="12" src="../../img/12.png" />
+<font color="#ff0000">这一步就是输入你的密码-确认密码，输入对应的端口号-确认端口号。</font></p>
+<p><img alt="13" src="../../img/13.png" /></p>
+<p>这一步是选择加密方式，我们输入”7“，然后回车。
+接下来就需要几分钟的安装时间，你可以起身上个厕所或者吃个苹果什么的- -</p>
+<p><img alt="14" src="../../img/14.png" /></p>
+<p>当你看到以上画面时，恭喜！你已经完成了ss服务的搭建。接下来好好使用你的ss账号享受网上冲浪吧，哈哈！</p>
+<h1 id="server-ipipserver-portpasswordencryption-method">特别提醒#切记一定要好好保存以上信息：Server IP（服务器IP）、Server Port（服务器端口）、Password（密码）、Encryption Method（加密方式），因为之后你用任何设备在任何平台翻墙都需要填写这些信息！好了，既然你已经拿到通往新世界的船票了，下面一步将教你如何上船！×关闭警报</h1>
+<p>到了这一步，也就是说你已经拥有了“翻墙”的权限了，然后需要知道的是如何利用软件和APP来实现翻墙上网。接下来就讲一下四大主流平台的翻墙方法。
+WINDOWS 电脑用户
+直接下载 shadowsocks：百度网盘。
+下载之后解压就能用(部分电脑需要安装.NET)，打开 shadowsocks.exe 会看到通知栏有一个纸飞机图标，双击它！
+<img alt="15" src="../../img/15.png" /></p>
+<p>ANDROID 手机用户
+直接在手机应用商店搜索下载： Shadowsocks。找不到也没关系，我也上传到网盘了了，点击下载：百度网盘。
+打开手机SS客户端，点击右上角+号，选择手动设置。</p>
+<p>在弹出页面中填写你的SS服务器IP、远程端口、密码、加密方式，点击对号保存，如图：
+IPHONE 手机用户
+相对微软和安卓来讲，苹果翻墙会比较麻烦点。需要一些特定的APP，目前已知的有Shadowrocket(2.99美元)、FirstWingy(0.99美元)、Wingy(0.99美元)等等，但是这些APP在国内商店是没有的。所以你还需要注册一个美国版苹果ID来配合下载使用。关于如何注册美国版苹果ID，请参考：如何注册美国苹果ID。
+MAC OS用户
+直接下载：ShadowsocksX-NG。如果旧版本不能用，可自行去下载最新版本：“https://github.com/shadowsocks/ShadowsocksX-NG/releases”。
+点击这里下载ShadowsocksX-NG</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../.." title="首页" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                首页
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../book/代码整洁之道/" title="代码整洁之道" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                代码整洁之道
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.2ba8dec4.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

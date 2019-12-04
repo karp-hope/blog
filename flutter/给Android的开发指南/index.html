@@ -1,0 +1,573 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.0">
+    
+    
+      
+        <title>给Android的开发指南 - hope's blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#okhttpflutter" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="hope's blog" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              hope's blog
+            </span>
+            <span class="md-header-nav__topic">
+              给Android的开发指南
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="hope's blog" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    hope's blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="首页" class="md-nav__link">
+      首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      常见配置
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        常见配置
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cfg/bwgconfig/" title="搬瓦工配置" class="md-nav__link">
+      搬瓦工配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      书籍
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        书籍
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../book/代码整洁之道/" title="代码整洁之道" class="md-nav__link">
+      代码整洁之道
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#okhttpflutter" title="Okhttp在flutter中对应物" class="md-nav__link">
+    Okhttp在flutter中对应物
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="如何为耗时任务显示进度条" class="md-nav__link">
+    如何为耗时任务显示进度条
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="工程结构和资源文件" class="md-nav__link">
+    工程结构和资源文件
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="在哪里放置分辨率相关的图片文件？" class="md-nav__link">
+    在哪里放置分辨率相关的图片文件？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="字符串储存在哪里？如何处理本地化？" class="md-nav__link">
+    字符串储存在哪里？如何处理本地化？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradle" title="Gradle 文件的对应物是什么？我该如何添加依赖？" class="md-nav__link">
+    Gradle 文件的对应物是什么？我该如何添加依赖？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activity-fragment" title="Activity 和 Fragment" class="md-nav__link">
+    Activity 和 Fragment
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activity-fragment-flutter" title="Activity 和 Fragment 在 Flutter 中的对应概念是什么？" class="md-nav__link">
+    Activity 和 Fragment 在 Flutter 中的对应概念是什么？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android-activity" title="如何监听 Android Activity 的生命周期事件？" class="md-nav__link">
+    如何监听 Android Activity 的生命周期事件？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="布局" class="md-nav__link">
+    布局
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flutter" title="在 Flutter 中如何处理屏幕旋转" class="md-nav__link">
+    在 Flutter 中如何处理屏幕旋转
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="手势监听和触摸事件处理" class="md-nav__link">
+    手势监听和触摸事件处理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flutter-widget" title="Flutter 中如何为一个 Widget 添加点击监听器？" class="md-nav__link">
+    Flutter 中如何为一个 Widget 添加点击监听器？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#widget" title="如何处理 Widget 上的其它手势？" class="md-nav__link">
+    如何处理 Widget 上的其它手势？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listviews-adapters" title="Listviews 和 adapters" class="md-nav__link">
+    Listviews 和 adapters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="文字处理" class="md-nav__link">
+    文字处理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text-widget" title="如何为 Text Widget 设置自定义字体？" class="md-nav__link">
+    如何为 Text Widget 设置自定义字体？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" title="表单输入" class="md-nav__link">
+    表单输入
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" title="如何创建自己的自定义原生集成插件？" class="md-nav__link">
+    如何创建自己的自定义原生集成插件？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" title="如何对应用使用主题？" class="md-nav__link">
+    如何对应用使用主题？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" title="数据库和本地存储" class="md-nav__link">
+    数据库和本地存储
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shared-preferences" title="如何使用 Shared Preferences？" class="md-nav__link">
+    如何使用 Shared Preferences？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flutter-sqlite" title="在 Flutter 中如何使用 SQLite？" class="md-nav__link">
+    在 Flutter 中如何使用 SQLite？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>给Android的开发指南</h1>
+                
+                <h4 id="okhttpflutter">Okhttp在flutter中对应物</h4>
+<p>Flutter 中使用流行的 http 包 进行网络请求是很简单的。</p>
+<p>虽然 http 包没有 OkHttp 中的所有功能，但是它抽象了很多通常你会自己实现的网络功能，这使其 本身在执行网络请求时简单易用。</p>
+<h4 id="_1">如何为耗时任务显示进度条</h4>
+<p>在 Flutter 中，我们使用 ProgressIndicator Widget。通过代码逻辑使用一个布尔标记值 控制进度条的渲染。</p>
+<h4 id="_2">工程结构和资源文件</h4>
+<h6 id="_3">在哪里放置分辨率相关的图片文件？</h6>
+<p>虽然 Android 区分对待资源文件 (resources) 和资产文件 (assets)，但是 Flutter 应用只有资产文件 (assets)。 所有原本在 Android 中应该放在 res/drawable-* 文件夹中的资源文件，在 Flutter 中都放在一个 assets 文件夹中。</p>
+<p>Flutter 遵循一个简单的类似 iOS 的密度相关的格式。文件可以是一倍 (1.0x)、两倍 (2.0x)、三倍 (3.0x) 或其它的任意倍数。Flutter 没有 dp 单位，但是有逻辑像素尺寸，基本和设备无关的像素尺寸是一样的。名称为 devicePixelRatio 的尺寸表示在单一逻辑像素标准下设备物理像素的比例。</p>
+<h6 id="_4">字符串储存在哪里？如何处理本地化？</h6>
+<p>Flutter 当下并没有一个特定的管理字符串的资源管理系统。目前来讲，最好的办法是将字符串作为静态域 存放在类中，并通过类访问它们。</p>
+<h4 id="gradle">Gradle 文件的对应物是什么？我该如何添加依赖？</h4>
+<p>在 Android 中，你在 Gradle 构建脚本中添加依赖。Flutter 使用 Dart 自己的构建系统以及 Pub 包管理器。 构建工具会将原生 Android 和 iOS 壳应用的构建代理给对应的构建系统。</p>
+<p>虽然在你的 Flutter 项目的 android 文件夹下有 Gradle 文件，但是它们只用于给对应平台的集成添加原生依赖。 一般来说，在 pubspec.yaml 文件中定义在 Flutter 里使用的外部依赖。<a href="https://pub.flutter-io.cn/flutter/packages/">Pub</a> 是查找 Flutter 包的好地方。</p>
+<h4 id="activity-fragment">Activity 和 Fragment</h4>
+<h6 id="activity-fragment-flutter">Activity 和 Fragment 在 Flutter 中的对应概念是什么？</h6>
+<p>在 Android 中，一个 Activity 代表用户可以完成的一件独立任务。一个 Fragment 代表一个 行为或者用户界面的一部分。Fragment 用于模块化你的代码，为大屏组合复杂的用户界面，并适配应用的界面。 在 Flutter 中，这两个概念都对应于 Widget。</p>
+<h6 id="android-activity">如何监听 Android Activity 的生命周期事件？</h6>
+<p>在 Android 中，你可以覆写 Actvity 的生命周期方法来监听其生命周期，也可以在 Application 上 注册 ActivityLifecycleCallbacks。在 Flutter 中，这两种方法都没有，但是你可以通过绑定 WidgetsBinding 观察者并监听 didChangeAppLifecycleState() 的变化事件来监听生命周期。</p>
+<p>可以被观察的生命周期事件有：</p>
+<ul>
+<li>inactive — 应用处于非活跃状态并且不接收用户输入。这个事件只适用于 iOS，Android 上没有对应 的事件</li>
+<li>paused — 应用当前对用户不可见，无法响应用户输入，并运行在后台。这个事件对应于 Android 中的 onPause()</li>
+<li>resumed — 应用对用户可见并且可以响应用户的输入。这个事件对应于 Android 中的 onPostResume()</li>
+<li>suspending — 应用暂时被挂起。这个事件对应于 Android 中的 onStop；iOS 上由于没有对应的事件， 因此不会触发此事件</li>
+</ul>
+<h4 id="_5">布局</h4>
+<p>LinearLayout:在 Android 中，LinearLayout 用于线性布局 widget 的—水平或者垂直。 在 Flutter 中，使用 Row 或者 Column Widget 来实现相同的效果。</p>
+<p>RelativeLayout：RelativeLayout 通过 Widget 的相互位置对它们进行布局。在 Flutter 中， 有几种实现相同效果的方法。</p>
+<p>你可以通过组合使用 Column、Row 和 Stack Widget 实现 RelativeLayout 的效果。 你还可以在 Widget 构造器内声明孩子相对父亲的布局规则。</p>
+<p>Collin 在 <a href="https://stackoverflow.com/questions/44396075/equivalent-of-relativelayout-in-flutter">StackOverflow</a> 上的回答是一个在 Flutter 中构建相对布局的好例子。</p>
+<p>ScrollView:在 Android 中，使用 ScrollView 布局 widget—如果用户的设备屏幕比应用的内容区域小，用户可以滑动内容。</p>
+<p>在 Flutter 中，实现这个功能的最简单的方法是使用 ListView Widget。从 Android 的角度看，这样做可能 是杀鸡用牛刀了，但是 Flutter 中 ListView Widget 既是一个 ScrollView，也是一个 Android 中的 ListView。</p>
+<h4 id="flutter">在 Flutter 中如何处理屏幕旋转</h4>
+<p>FlutterView 会处理配置的变化，前提条件是在 AndroidManifest.xml 文件中声明了：</p>
+<h4 id="_6">手势监听和触摸事件处理</h4>
+<h6 id="flutter-widget">Flutter 中如何为一个 Widget 添加点击监听器？</h6>
+<p>在 Android 中，你可以通过调用 setOnClickListener 方法在按钮这样的 View 上 添加点击监听器。
+在 Flutter 中有两种添加触摸监听器的方法：
+1. 如果 Widget 支持事件监听，那么向它传入一个方法并在方法中处理事件。例如，RaisedButton 有 一个 onPressed 参数
+2. 如果 Widget 不支持事件监听，将 Widget 包装进一个 GestureDetector 中并向 onTap 参数 传入一个方法。</p>
+<h6 id="widget">如何处理 Widget 上的其它手势？</h6>
+<p>使用 GestureDetector 可以监听非常多的手势</p>
+<h4 id="listviews-adapters">Listviews 和 adapters</h4>
+<h4 id="_7">文字处理</h4>
+<h6 id="text-widget">如何为 Text Widget 设置自定义字体？</h6>
+<p>在 Android SDK 中（从 Android O 开始），你可以创建一个字体资源文件并将其 传给 TextView 的 FontFamily 参数。</p>
+<p>在 Flutter 中，将字体文件放入一个文件夹，并在 pubspec.yaml 文件中引用它，就 和导入图片一样。</p>
+<h4 id="_8">表单输入</h4>
+<p>在 Flutter 中，你可以简单地通过向 Text Widget 构造器的 decoration 参数传入一个 InputDecoration 对象 来为输入框展示一个“提示”或占位文本。</p>
+<h4 id="_9">如何创建自己的自定义原生集成插件？</h4>
+<h4 id="_10">如何对应用使用主题？</h4>
+<p>Flutter 提供开箱即用的优美的 Material Design 实现，可以满足你通常需要的各种样式和主题的需求。 不同于 Android 中你在 XML 文件中定义主题并在 AndroidManifest.xml 中将其赋值给你的应用， Flutter 中是在顶层 Widget 上声明主题。</p>
+<h4 id="_11">数据库和本地存储</h4>
+<h6 id="shared-preferences">如何使用 Shared Preferences？</h6>
+<h6 id="flutter-sqlite">在 Flutter 中如何使用 SQLite？</h6>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.2ba8dec4.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
