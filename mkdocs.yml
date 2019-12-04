@@ -1,0 +1,13 @@
+site_name: hope's blog
+theme: 'material'
+dev_addr: '127.0.0.1:8888'
+
+nav:
+  - 首页: index.md
+  - 常见配置:
+    - 搬瓦工配置: cfg/bwgconfig.md
+  - 书籍: 
+    - 代码整洁之道: book/代码整洁之道.md
+
+
+
