@@ -36,7 +36,7 @@
     
     
       
-        <title>Drat基本知识 - hope's blog</title>
+        <title>Appstore id - hope's blog</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#dart-flutter" tabindex="1" class="md-skip">
+      <a href="#apple-id-shadowsocks" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -100,7 +100,7 @@
               hope's blog
             </span>
             <span class="md-header-nav__topic">
-              Drat基本知识
+              Appstore id
             </span>
           
         </div>
@@ -178,10 +178,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       常见配置
@@ -199,7 +201,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cfg/bwgconfig/" title="搬瓦工配置" class="md-nav__link">
+    <a href="../bwgconfig/" title="搬瓦工配置" class="md-nav__link">
       搬瓦工配置
     </a>
   </li>
@@ -209,11 +211,63 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../cfg/Appstore Id 存储/" title="Appstore id" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Appstore id
+      </label>
+    
+    <a href="./" title="Appstore id" class="md-nav__link md-nav__link--active">
       Appstore id
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="重要提示：" class="md-nav__link">
+    重要提示：
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1appstoreicloud" title="1、请在AppStore商店登录账号，不要在设置里面登录iCloud账号！" class="md-nav__link">
+    1、请在AppStore商店登录账号，不要在设置里面登录iCloud账号！
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" title="2、使用完毕务必退出账号，否则手机有被锁变砖的可能！" class="md-nav__link">
+    2、使用完毕务必退出账号，否则手机有被锁变砖的可能！
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -291,8 +345,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mixins" title="mixins（为类添加新的功能）" class="md-nav__link">
-    mixins（为类添加新的功能）
+  <a href="#_1" title="重要提示：" class="md-nav__link">
+    重要提示：
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1appstoreicloud" title="1、请在AppStore商店登录账号，不要在设置里面登录iCloud账号！" class="md-nav__link">
+    1、请在AppStore商店登录账号，不要在设置里面登录iCloud账号！
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" title="2、使用完毕务必退出账号，否则手机有被锁变砖的可能！" class="md-nav__link">
+    2、使用完毕务必退出账号，否则手机有被锁变砖的可能！
   </a>
   
 </li>
@@ -314,34 +382,17 @@
               
                 
                 
-                <h2 id="dart-flutter">Dart 是 Flutter 的主要开发语言</h2>
-<h4 id="mixins">mixins（为类添加新的功能）</h4>
-<p>Mixins 是一种在多类继承中重用 一个类代码的方法。</p>
-<p>使用 with 关键字后面为一个或者多个 mixin 名字来使用 mixin。</p>
-<h1 id="specifying-a-library-prefix">Specifying a library prefix</h1>
-<p>If you import two libraries that have conflicting identifiers, then you can specify a prefix for one or both libraries. For example, if library1 and library2 both have an Element class, then you might have code like this:</p>
-<pre><code>import 'package:lib1/lib1.dart';
-import 'package:lib2/lib2.dart' as lib2;
-
-// Uses Element from lib1.
-Element element1 = Element();
-
-// Uses Element from lib2.
-lib2.Element element2 = lib2.Element();
-</code></pre>
-
-<h2 id="assetbundle-class">AssetBundle class</h2>
-<p>A collection of resources used by the application.</p>
-<p>Asset bundles contain resources, such as images and strings, that can be used by an application. Access to these resources is asynchronous so that they can be transparently loaded over a network (e.g., from a NetworkAssetBundle) or from the local file system without blocking the application's user interface.</p>
-<p>Applications have a rootBundle, which contains the resources that were packaged with the application when it was built. To add resources to the rootBundle for your application, add them to the assets subsection of the flutter section of your application's pubspec.yaml manifest.</p>
-<h2 id="navigator-and-routes">navigator and routes</h2>
-<p>A Route is an abstraction for a “screen” or “page” of an app, and a Navigator is a widget that manages routes. A route roughly maps to an Activity, but it does not carry the same meaning. A navigator can push and pop routes to move from screen to screen. Navigators work like a stack on which you can push() new routes you want to navigate to, and from which you can pop() routes when you want to “go back”.</p>
-<p>In Android, you declare your activities inside the app’s AndroidManifest.xml.</p>
-<p>In Flutter, you have a couple options to navigate between pages:</p>
-<ul>
-<li>Specify a Map of route names. (MaterialApp)</li>
-<li>Directly navigate to a route. (WidgetApp)</li>
-</ul>
+                <h1 id="apple-id-shadowsocks">无需注册美区 Apple ID ，目前唯一免费且能下载到的 shadowsocks 软件</h1>
+<p><strong>#2019.11.13 更新</strong>：</p>
+<p>中国区AppStore基本全部下架此类应用，所以需要美区、港区账号，现在为大家提供免费的账号，之后可以在海外区下载 Potatso Lite、shadowrocket 等应用，使用教程仍然可以参考下面的内容。</p>
+<p>美区账号：kefujsw@gmail.com 密码：Share1100</p>
+<p>美区账号：idmyinfo@gmail.com 密码：Idmy1100</p>
+<h3 id="_1"><font color="red">重要提示：</font></h3>
+<h3 id="1appstoreicloud"><font color="red">1、请在AppStore商店登录账号，不要在设置里面登录iCloud账号！</font></h3>
+<h3 id="2"><font color="red">2、使用完毕务必退出账号，否则手机有被锁变砖的可能！</font></h3>
+<hr />
+<p>这可能是中国区 <a href="http://gooogle.how/tag/app-store">App Store</a> 目前唯一免费，还能下载到的 shadowsocks 相关的 VPN 软件了，完全省去了注册美区 Apple ID 的繁琐过程。</p>
+<p>非中国区 Apple ID 的用户，在 App Store 中可以搜索『Wingy』『Potatso Lite』等等 shadowsocks 相关应用即可。</p>
                 
                   
                 
@@ -358,6 +409,41 @@ lib2.Element element2 = lib2.Element();
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../bwgconfig/" title="搬瓦工配置" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                搬瓦工配置
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../book/代码整洁之道/" title="代码整洁之道" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                代码整洁之道
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
