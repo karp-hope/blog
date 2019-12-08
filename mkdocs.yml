@@ -6,6 +6,7 @@ nav:
   - 首页: index.md
   - 常见配置:
     - 搬瓦工配置: cfg/bwgconfig.md
+    - Appstore id: cfg/Appstore Id 存储.md
   - 书籍: 
     - 代码整洁之道: book/代码整洁之道.md
     - 代码相关书籍: book/代码相关书籍.md
