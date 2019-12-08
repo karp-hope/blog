@@ -12,11 +12,11 @@
 
 美区账号：idmyinfo@gmail.com 密码：Idmy1100
 
-### 重要提示：
+### <font color="red">重要提示：</font>
 
-### 1、请在AppStore商店登录账号，不要在设置里面登录iCloud账号！
+### <font color="red">1、请在AppStore商店登录账号，不要在设置里面登录iCloud账号！</font>
 
-### 2、使用完毕务必退出账号，否则手机有被锁变砖的可能！
+### <font color="red">2、使用完毕务必退出账号，否则手机有被锁变砖的可能！</font>
 
 ------
 
