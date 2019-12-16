@@ -59,3 +59,9 @@ markdown = redcarpet.new("Hello World")
 [链接的文字](https://karp-hope.github.io/blog)
 ```
 
+### 添加图片
+
+```
+![图片的替代文字](/path/to/img.png "Optional title")
+```
+
