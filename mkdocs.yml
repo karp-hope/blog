@@ -7,9 +7,13 @@ nav:
   - 常见配置:
     - 搬瓦工配置: cfg/bwgconfig.md
     - Markdown语法: cfg/Markdown基本语法.md
+    - sublime快捷键: cfg/sublime快捷键.md
+    - xcode常用快捷键: cfg/xcode常用快捷键.md
   - 书籍: 
     - 代码整洁之道: book/代码整洁之道.md
     - 代码相关书籍: book/代码相关书籍.md
+    - 设计模式: book/设计模式.md
+    - 产品思维: book/Product-Minded.md
 
 
 
